@@ -55,10 +55,32 @@ Visit Swagger UI to explore and test the API using the interactive documentation
 Credentials:
 user1/password1
 
-## Run Unit Tests
+### Run Unit Tests
 
 Run unit tests using your preferred test runner. For example, using pytest:
 
 ```bash
 pytest
 ```
+
+### Self Assessment
+
+#### Self-assessment of the solution
+
+##### What is done:
++ APIs to authorize user with JWT token and asynchroniz task to make reservation.
++ Unit test of database interactions and routes
+
+##### What is not touched:
++ Deployment: Should have time to write dockfile to build a image. Even more, should think about how to scale up in a distributed environment.
+
+#### Major tooling/framework/library decisions:
+
++ API Framework:
+FastAPI is known for its performance and modern features.
+
++ Database Interaction:
+SQLAlchemy is used for working with databases. It provides a powerful and flexible Object-Relational Mapping (ORM) system.
+
++ Testing: 
+Pytest is a popular testing framework for Python. It simplifies the process of writing and executing tests.
